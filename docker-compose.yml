@@ -5,8 +5,8 @@ services:
     image: mysql:8.0.13
     container_name: "Mysqldatabase"
     environment:
-      MYSQL_ROOT_USER: root
-      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_ROOT_USER: abc #enter username
+      MYSQL_ROOT_PASSWORD: abc #enter username
       MYSQL_DATABASE: mydatabase
     expose:
       - 3308
@@ -20,8 +20,8 @@ services:
     container_name: "TestApp"
     environment:
       MYSQLDB_HOST: Mysqldatabase
-      MYSQLDB_USER: root
-      MYSQLDB_PASSWORD: root1234
+      MYSQLDB_USER: abc #enter username
+      MYSQLDB_PASSWORD: abc #enter password
       MYSQLDB_PORT: 3306
     expose:
       - 8091
